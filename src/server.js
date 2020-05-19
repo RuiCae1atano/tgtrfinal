@@ -1,3 +1,4 @@
+var PORT = process.env.PORT || 8050
 import express from 'express';
 import path from 'path';
 
@@ -12,7 +13,7 @@ app.get('*',(req, res) =>{
     res.sendFile(path.join(__dirname + '/build/index.html'));
 })
 
-app.listen(8050, () => console.log('Teste...'));
+app.listen(PORT, () => console.log('Teste...'));
 
 
 

@@ -1,7 +1,9 @@
-var PORT = process.env.PORT || 8050
+
 import express from 'express';
 import path from 'path';
 
+
+var PORT = process.env.PORT || 8050;
 const app = express();
 
 app.get('/hello', (req, res) => res.send('Hello!'));
@@ -13,7 +15,7 @@ app.get('*',(req, res) =>{
     res.sendFile(path.join(__dirname + '/build/index.html'));
 })
 
-app.listen(PORT, () => console.log('Teste...'));
+app.listen(8050, () => console.log('Teste...'));
 
 
 

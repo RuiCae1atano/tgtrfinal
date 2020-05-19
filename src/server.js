@@ -15,7 +15,7 @@ app.get('*',(req, res) =>{
     res.sendFile(path.join(__dirname + '/build/index.html'));
 })
 
-app.listen(8050, () => console.log('Teste...'));
+app.listen(PORT, () => console.log('Teste...'));
 
 
 
